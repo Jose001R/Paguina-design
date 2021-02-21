@@ -1,0 +1,248 @@
+/* Media Querie header*/
+
+@media screen and (max-width: 500px){
+	.contenedor{
+		padding: 60px 0;
+		width: 100%;
+		max-width: 1000px;
+		margin: auto;
+		overflow: hidden;
+	}
+.titulo{
+	color: #642a73;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 60px;
+}
+}
+
+/*Menu nav*/
+
+@media screen and (max-width: 800px){
+	.menu{
+		background-color: #000;
+		height: 60px;
+		width: 100%;
+		display: flex;
+		overflow: hidden;
+		justify-content: space-between;
+	}
+	 #img-logo{
+    height: 70px;
+    
+    position: relative;
+	 }
+	 #menu{	
+    height: 50%;
+    width:60px;
+    margin: 15px 10px 0 0px;
+    position: relative;
+    align-content: right;
+	  }
+	  .contNav{
+		height: 70vh;
+		width: 70%;
+		text-align: left;
+		background-color: #7E7D7D;
+		position: absolute;
+		z-index: 100;
+	}
+	.contNav > a {
+		color:#fff;
+		font-weight: 300;	
+		text-decoration: none;
+		display: flex;
+		flex-direction: column;
+		top: 15px;
+		left: 40%;
+		padding-top: 40px;
+		position: relative;
+		width: 100%;
+		}
+		.contNav > a:hover{
+			text-decoration: underline;
+		}
+
+		.uno{
+			transform: translateX(-100%);
+			opacity: 0;
+			transition: 0.5s ease;
+		}
+		.dos{
+			opacity: 1;
+			transition: 0.5s ease;
+		}
+
+
+
+		header .textos-header{
+			display: flex;
+			height: 70%	;
+			width: 100%;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			text-align:center;
+			position: absolute;
+			z-index: 2;
+		}
+		.textos-header > h1{
+			font-size: 50px;
+			color: #fffs;
+		}
+		.textos-header > h2{
+			font-size: 30px;
+			font-weight: 300;
+			color:#fff;
+		}
+		}
+
+
+/*Media Querie Cuerpo*/
+
+@media screen and (max-width:500px){
+	.img-principal{
+		display: none;
+	}
+	.sobre-nosotros .contenido-textos{
+		width: 90%; 
+	} 	
+}
+
+
+/*Media Querie Portafolio*/
+@media screen and (max-width: 500px){
+ .imagen-port{
+ 	width: 24%;
+ 	margin-bottom: 10px;
+ 	height: 125px;
+ 	overflow: hidden;
+ 	position: relative;
+ 	cursor: pointer;
+ 	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+ }
+ .hover-galeria{ 
+ 	position: absolute; 
+ 	width: 100%; 
+ 	height: 100%; 
+ 	top: 0px; 
+ 	transform: scale(0); 
+ 	transition: 0.5s;
+ 	display: flex; 
+ 	justify-content: center; 
+ 	align-items: center; 
+ 	flex-direction: column; 
+ 	background: hsla(271, 50%, 40%, 0.635);
+ }
+
+ .hover-galeria img{
+ 	font-size: 50px;
+ }
+
+ .hover-galeria p{
+ 	color: #fff; 
+ }
+
+ .imagen-port:hover .hover-galeria{
+ 	transform: scale(1);
+ }
+}
+
+
+/* Media Querie Clientes */
+
+@media screen and (max-width: 744px){
+	.cards{
+		width: 100%;
+		height: 200px;
+		position: relative;
+		display: inline;
+	}
+	.card{
+		width: 96%;
+		height: 150px;
+		background-color: #4d0686;
+		border-radius: 15px;
+		box-shadow: 0 0 20px 0 #8604ff80;
+		justify-content: space-evenly;
+}
+@media screen and (max-width: 391px){
+	.card{
+		width: 96%;
+		height: 100px;
+		background-color: #4d0686;
+		box-shadow: 0 0 20px 0 #8604ff80;
+		justify-content: space-evenly;
+		overflow: scroll;
+}
+.contenido-textos-card h4{
+	margin-top: 10px;
+	color: #fff;
+	text-decoration: underline;
+}
+.contenido-textos-card p{
+	margin: 1px 15px 0 0;
+	color: #fff;
+	font-size: 13px;
+}
+}
+
+
+/* media Querie Nuestros productos */
+
+@media screen and (max-width:500px){
+	
+.productos div{
+display: inline;
+margin: 10px;
+}
+.cont-produt{
+	height: auto;
+}
+.cont-produt img{
+	width: 50%;
+	margin-top: 20px;
+}	
+.cont-produt > h3{
+	text-align: center;
+	margin: 10px;
+}
+.cont-produt > p{
+text-align: justify;
+padding: 0 20px 0 20px;
+}
+
+}
+
+/*Media Querie footer*/
+@media screen and (max-width: 500px){
+footer{
+	height: 300px; 
+ 	width: 100%; 
+ 	background-color: #000; 
+ }
+ .contenedor-footer{ 
+ 	display: flex;
+	flex-direction: column;
+}
+.cont-text{
+	align-items: center;
+	align-content: space-evenly;
+	text-align:center;
+	overflow: hidden;
+}
+.cont-text h3{ 
+	color: #fff; 
+	margin-top: 16px;
+	} 
+.cont-text p{
+	 color: #fff;
+	text-decoration:overline #4d0686 3px; 
+} 
+.titulo-final{ 
+color: #fff; 
+text-align: center; 
+text-decoration: overline 2px; 
+}
+}
+}
